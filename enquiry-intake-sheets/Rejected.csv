@@ -1,0 +1,5 @@
+submitted_at,name,service,budget,phone,reason
+2026-09-15T10:30:00.000Z,Mohit Sharma,WhatsApp bot,25000,98765,"Phone must be exactly 10 digits."
+2026-09-16T16:10:00.000Z,Anita Desai,Booking page,,9812345678,"Budget is required."
+2026-09-17T12:00:00.000Z,Karan Singh,WhatsApp bot,,12345,"Phone must be exactly 10 digits. Budget is required."
+2026-09-17T15:40:00.000Z,Deepak Verma,Booking page,45000,+91 9876543210,"Phone must be exactly 10 digits."

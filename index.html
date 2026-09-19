@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>infinitywithai.com — Custom AI tools for small businesses in Bengaluru and India</title>
+<meta name="description" content="infinitywithai.com builds one small custom AI tool for small business owners in Bengaluru and across India. Fixed scope, live in days, Rs 50,000 a project.">
+<meta name="theme-color" content="#F7F3EC">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Colours, named with their hex codes */
+  :root {
+    --soft-cream: #F7F3EC;   /* page background */
+    --ink-navy: #1B2A41;     /* body text and deep panels */
+    --deep-teal: #0F6B6B;    /* accent only: buttons, one headline word, rules, icons */
+    --warm-sand: #D9C7A7;    /* small labels, quiet lines, card and section grounds */
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--soft-cream);
+    color: var(--ink-navy);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .brand {
+    font-family: "Fraunces", Georgia, "Times New Roman", serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.12;
+    margin: 0;
+  }
+
+  h1 { font-size: clamp(2.35rem, 5.2vw, 4rem); }
+  h2 { font-size: clamp(1.75rem, 3.2vw, 2.6rem); }
+  h3 { font-size: 1.35rem; line-height: 1.25; }
+
+  p { margin: 0 0 1rem; }
+  p:last-child { margin-bottom: 0; }
+
+  img { max-width: 100%; height: auto; display: block; }
+
+  a { color: var(--deep-teal); }
+
+  .wrap {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .measure { max-width: 68ch; }
+
+  section { padding: 96px 0; }
+
+  .eyebrow {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--deep-teal);
+    margin: 0 0 14px;
+  }
+
+  .lede { font-size: 1.125rem; color: var(--ink-navy); }
+  .quiet { color: var(--ink-navy); opacity: 0.72; }
+
+  /* ---------- header ---------- */
+  .site-header {
+    border-bottom: 1px solid var(--warm-sand);
+    background: var(--soft-cream);
+  }
+  .site-header .wrap {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .site-header img { width: 40px; height: 40px; }
+  .brand { font-size: 1.05rem; letter-spacing: -0.01em; }
+
+  /* ---------- buttons ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    min-height: 48px;
+    padding: 14px 26px;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    background: var(--deep-teal);
+    color: var(--soft-cream);
+  }
+  .btn-secondary {
+    background: transparent;
+    color: var(--ink-navy);
+    border: 1px solid var(--warm-sand);
+  }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+
+  /* ---------- hero ---------- */
+  .hero { padding-top: 72px; padding-bottom: 96px; }
+  .hero .wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 56px;
+    align-items: center;
+  }
+  .hero h1 { max-width: 16ch; }
+  .hero .lede { margin-top: 20px; max-width: 46ch; }
+  .hero .btn { margin-top: 32px; }
+  .hero-figure { margin: 0; }
+  .hero-figure img {
+    width: 100%;
+    min-height: 62vh;
+    max-height: 78vh;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+
+  /* ---------- problem ---------- */
+  .problem blockquote {
+    margin: 28px 0 0;
+    padding-left: 24px;
+    border-left: 3px solid var(--deep-teal);
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(1.3rem, 2.2vw, 1.7rem);
+    line-height: 1.4;
+    max-width: 60ch;
+  }
+  .slot {
+    margin-top: 28px;
+    color: var(--ink-navy);
+    opacity: 0.65;
+  }
+
+  /* ---------- services ---------- */
+  .services { background: var(--soft-cream); }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+  }
+  .card {
+    background: var(--warm-sand);
+    border-radius: 16px;
+    padding: 32px 28px;
+  }
+  .card svg { width: 28px; height: 28px; color: var(--deep-teal); margin-bottom: 18px; }
+  .card h3 { margin-bottom: 10px; }
+  .price-line { margin-top: 32px; font-size: 1.05rem; }
+  .price-line strong { font-family: "Fraunces", Georgia, serif; }
+
+  /* ---------- steps ---------- */
+  .steps ol {
+    list-style: none;
+    margin: 40px 0 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    counter-reset: step;
+  }
+  .steps li {
+    counter-increment: step;
+    border-top: 2px solid var(--warm-sand);
+    padding-top: 18px;
+  }
+  .steps li::before {
+    content: counter(step);
+    display: block;
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 0.95rem;
+    color: var(--deep-teal);
+    margin-bottom: 8px;
+  }
+
+  /* ---------- about ---------- */
+  .about { background: var(--soft-cream); }
+  .about .wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+    gap: 56px;
+    align-items: start;
+  }
+  .about-head {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .about-head img {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex: none;
+  }
+  .about-head h2 { margin: 0; }
+  .about-figure { margin: 0; }
+  .about-figure img { width: 100%; border-radius: 14px; }
+
+  /* ---------- contact ---------- */
+  .contact .lead-actions { margin-top: 32px; }
+  .contact .other-ways {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  /* ---------- footer ---------- */
+  .site-footer {
+    background: var(--ink-navy);
+    color: var(--soft-cream);
+    padding: 56px 0;
+  }
+  .site-footer .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+  }
+  .site-footer img { width: 32px; height: 32px; }
+  .site-footer p { margin: 0; font-size: 0.95rem; opacity: 0.85; }
+
+  /* ---------- phone ---------- */
+  @media (max-width: 900px) {
+    section, .hero { padding-top: 56px; padding-bottom: 56px; }
+    .hero { padding-top: 40px; }
+    .hero .wrap,
+    .about .wrap,
+    .cards,
+    .steps ol {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .hero .wrap, .about .wrap { gap: 32px; }
+    .hero-figure img { min-height: 0; max-height: none; }
+    .lede, .hero .lede { font-size: 1.0625rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <img src="Images/Logo.jpeg" width="1024" height="1024" alt="infinitywithai.com logo" onerror="this.style.display='none'">
+    <span class="brand">infinitywithai.com</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1. First screen -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">infinitywithai.com</p>
+        <h1>One small AI tool that fits how you already work.</h1>
+        <p class="lede">For small business owners in Bengaluru and across India — fixed scope, live in days.</p>
+        <a class="btn" href="https://cal.com/rajrock/20-min-ai-business-discovery-call">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M8 3v4M16 3v4M3 10h18"></path></svg>
+          Book a 20 minute call
+        </a>
+      </div>
+      <figure class="hero-figure">
+        <img src="Images/Speaking.jpg" width="934" height="449" alt="The founder of infinitywithai.com speaking at a small business event in Bengaluru" onerror="var f=this.closest('figure');f.style.display='none';f.parentElement.style.gridTemplateColumns='1fr';">
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. The problem, in the client's words -->
+  <section class="problem">
+    <div class="wrap measure">
+      <h2>The problem</h2>
+      <p class="lede" style="margin-top:16px;">Ask an owner in Bengaluru what goes wrong in a normal week, and the pattern is always the same.</p>
+      <blockquote>Enquiries sit in WhatsApp, quotes sit in Excel, and nobody chases them — so work slips, and money stays uncollected.</blockquote>
+      <p>A client put it to me in their own words:</p>
+      <p class="slot">[CLIENT QUOTE]</p>
+    </div>
+  </section>
+
+  <!-- 3. What I do about it -->
+  <section class="services">
+    <div class="wrap">
+      <h2>What I build</h2>
+      <p class="lede measure" style="margin-top:16px;">One small tool that fits your business, not a system you have to change your business to use.</p>
+      <div class="cards">
+        <article class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"></path><path d="M14 3v5h5M9 13l2 2 4-4"></path></svg>
+          <h3>Enquiry intake form that refuses junk.</h3>
+          <p class="quiet">Every enquiry arrives complete, so you are not chasing names and numbers before you can quote.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5M4 19h16"></path><path d="M8 16V11M12 16V8M16 16v-3"></path></svg>
+          <h3>Open quotes follow-up board.</h3>
+          <p class="quiet">Quotes stop disappearing into a spreadsheet, and you can see what still needs a nudge.</p>
+        </article>
+        <article class="card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4z"></path><path d="M4 7l8 6 8-6"></path></svg>
+          <h3>Monday morning AI tool digest.</h3>
+          <p class="quiet">One short email a week with the tools and news that actually matter for a business like yours.</p>
+        </article>
+      </div>
+      <p class="price-line"><strong>Rs 50,000 a project.</strong> That one price covers everything the three tools do.</p>
+    </div>
+  </section>
+
+  <!-- 4. How it works -->
+  <section class="steps">
+    <div class="wrap">
+      <h2>How it works</h2>
+      <ol>
+        <li>We talk about how you already work.</li>
+        <li>I build one small tool that fits it.</li>
+        <li>It goes live in days, and you use it.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 5. Who I am -->
+  <section class="about">
+    <div class="wrap">
+      <div>
+        <div class="about-head">
+          <img src="Images/Profile.jpeg" width="1024" height="1024" alt="Portrait of the founder of infinitywithai.com" onerror="this.style.display='none'">
+          <h2>Raj</h2>
+        </div>
+        <p class="lede">I am one person, and I build these tools myself.</p>
+        <p>I kept seeing good small businesses lose work because nobody chased the enquiry. A message sits unanswered, a quote goes quiet, and the job goes to whoever replied first. It is rarely a big problem — it is a small one, repeated every week.</p>
+        <p>So I build one small tool that fits how you already work, keep the scope fixed, and get it live in days.</p>
+        <p class="quiet">I work with owners in Bengaluru and online across India.</p>
+      </div>
+      <figure class="about-figure">
+        <img src="Images/Working.jpg" width="929" height="558" alt="Laptop, steel tumbler and paper diary on a desk in a Bengaluru back office" loading="lazy" onerror="var f=this.closest('figure');f.style.display='none';f.parentElement.style.gridTemplateColumns='1fr';">
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6. Contact -->
+  <section class="contact">
+    <div class="wrap measure">
+      <h2>Start here</h2>
+      <p class="lede" style="margin-top:16px;">Tell me how your enquiries and quotes work today, and I will tell you if a small tool can fix it.</p>
+      <div class="lead-actions">
+        <a class="btn" href="https://cal.com/rajrock/20-min-ai-business-discovery-call">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M8 3v4M16 3v4M3 10h18"></path></svg>
+          Book a 20 minute call
+        </a>
+      </div>
+      <div class="other-ways">
+        <a class="btn btn-secondary" href="https://wa.me/918050310861?text=Hello%20infinitywithai.com%2C%20I%27d%20like%20to%20talk%20about%20a%20small%20AI%20tool%20for%20my%20business.">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.5 8.5 8.5 0 0 1-4-1L3 20l1-5a8.5 8.5 0 1 1 17-3.5z"></path></svg>
+          Message me on WhatsApp
+        </a>
+        <a class="btn btn-secondary" href="mailto:raju.awscs@gmail.com?subject=Enquiry%20about%20a%20small%20AI%20tool%20-%20infinitywithai.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+          Email me
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <img src="Images/Logo%20Dark.jpeg" width="1024" height="1024" alt="infinitywithai.com logo" onerror="this.style.display='none'">
+    <p>infinitywithai.com — custom AI tools for small businesses in Bengaluru and across India.</p>
+  </div>
+</footer>
+
+</body>
+</html>

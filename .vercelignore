@@ -1,0 +1,18 @@
+# Secrets — never upload these to a public deployment
+key.txt
+composio-key.txt
+.env
+.env.*
+
+# Only index.html and Images/ are the website. Everything else is internal.
+AGENTS.md
+README.md
+REPORT.md
+WORKLOG.md
+digest.js
+digest.html
+daily-digest-schedule.xml
+n8n-workflow-enquiry-intake.backup.json
+enquiry-intake-sheets/
+hello-agent/
+.kilo/

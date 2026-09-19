@@ -1,0 +1,11 @@
+# Secrets — never commit these
+key.txt
+composio-key.txt
+.env
+.env.*
+
+# Local agent state
+.kilo/
+
+# Local logs
+*.log
